@@ -1,0 +1,119 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --green: hsl(75, 94%, 57%);
+  --white: hsl(0, 0%, 100%);
+  --grey-700: hsl(0, 0%, 20%);
+  --grey-800: hsl(0, 0%, 12%);
+  --grey-900: hsl(0, 0%, 8%);
+}
+
+body {
+  min-height: 100vh;
+  background-color: var(--grey-900);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+  padding: 1rem;
+}
+
+.card {
+  background-color: var(--grey-800);
+  border-radius: 12px;
+  padding: 40px 24px;
+  width: 100%;
+  max-width: 384px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.avatar {
+  width: 88px;
+  height: 88px;
+  border-radius: 50%;
+  object-fit: cover;
+  display: block;
+  margin-bottom: 24px;
+}
+
+.name {
+  font-size: 24px;
+  font-weight: 700;
+  color: var(--white);
+  margin-bottom: 6px;
+  text-align: center;
+}
+
+.location {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--green);
+  margin-bottom: 24px;
+  text-align: center;
+}
+
+.bio {
+  font-size: 14px;
+  font-weight: 400;
+  color: var(--white);
+  text-align: center;
+  margin-bottom: 24px;
+  line-height: 1.5;
+}
+
+.links {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  width: 100%;
+}
+
+.link-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--grey-700);
+  color: var(--white);
+  border: none;
+  border-radius: 8px;
+  padding: 11px 16px;
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  text-decoration: none;
+  transition:
+    background-color 0.2s ease,
+    color 0.2s ease;
+}
+
+.link-btn:hover,
+.link-btn:focus-visible {
+  background-color: var(--green);
+  color: var(--grey-900);
+  outline: none;
+}
+
+.attribution {
+  margin-top: 24px;
+  font-size: 11px;
+  color: hsl(0, 0%, 45%);
+  text-align: center;
+}
+.attribution a {
+  color: var(--green);
+  text-decoration: none;
+}
+.attribution a:hover {
+  text-decoration: underline;
+}
